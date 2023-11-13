@@ -3,9 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script defer src="../Javascript/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Hello</h1>
+    <!-- HEADER SECTION -->
+    <section id="header">
+      <a href="#"><img src="../img/logo.png" alt="logo" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <h4>Trade-in-offer</h4>
+      <h2>Super value deals</h2>
+      <h1>On all products</h1>
+      <p>Save more with coupons & up to 70% off!</p>
+      <button>Shop Now</button>
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+        <img src="../img/features/f1.png" alt="" />
+        <!-- Inline bg-color supplied in js -->
+        <h6>Free Shipping</h6>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="../img/products/f1.jpg" alt="" />
+          <dev class="desc">
+            <span>adidas</span>
+            <h5>Cartoon Astronout T-shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </dev>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
   </body>
 </html>

@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="icon" href="../ICON/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- HEADER SECTION -->
@@ -17,15 +18,24 @@
       <a href="#"><img src="../img/logo.png" alt="logo" class="logo" /></a>
       <div>
         <ul id="navbar">
+          <li class="close-btn-li"><i class="fa-solid fa-x"></i></li>
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
+          <li class="lg-bag">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
           </li>
         </ul>
+      </div>
+      <div class="menu-icon-con">
+        <span
+          ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a
+        ></span>
+        <button>
+          <span><i class="fa-solid fa-bars" id="menu-i"></i></span>
+        </button>
       </div>
     </section>
 
@@ -39,7 +49,7 @@
     </section>
 
     <!-- FEATURED SECTION -->
-    <section id="feature" class="section-p1">
+    <section id="feature">
       <div class="fe-box">
         <img src="../img/features/f1.png" alt="" />
         <!-- Inline bg-color supplied in js -->
@@ -74,7 +84,7 @@
     <!-- BANNER SECTION -->
     <section id="banner" class="section-m1">
       <h4>Repair Service</h4>
-      <h2>Up yo <span>70% off</span> - All T-shirts & Accessories</h2>
+      <h2>Up to <span>70% off</span> for All T-shirts & Accessories</h2>
       <button class="normal">Explore More</button>
     </section>
 
@@ -215,6 +225,7 @@
       </div>
     </section>
 
+    <!-- BACK TO TOP BTN -->
     <div class="back-top-icon" title="back to top">
       <a href="#"><i class="fa-solid fa-up-long" id="back-top"></i></a>
     </div>

@@ -3,6 +3,9 @@ const featureSection = document.getElementById("feature");
 const featureProducts = document.querySelector(".pro-container");
 const newArrivals = document.querySelector(".new-arrivals");
 const year = document.querySelector(".date");
+const menuIcon = document.getElementById("menu-i");
+const navBar = document.getElementById("navbar");
+const navBarCloseIcon = document.querySelector(".close-btn-li");
 
 // setting date dynamicaly
 const yr = new Date().getFullYear();
@@ -237,7 +240,6 @@ function addItemsForNewArrivals(featureProductList) {
   newArrivals.innerHTML = menuItems;
 }
 
-// window scroll event listener
 // WINDOW SCROLL EVENT LISTENER
 window.addEventListener("scroll", () => {
   const scrollHeight = window.pageYOffset;
@@ -247,4 +249,14 @@ window.addEventListener("scroll", () => {
   } else {
     backToTopBtn.style.display = "none";
   }
+});
+
+// EVENT LISTENER FOR MENU ICON
+menuIcon.addEventListener("click", () => {
+  navBar.classList.add("active");
+});
+
+// EVENT LISTENER FOR MENU ICON CLOSE BTN
+navBarCloseIcon.addEventListener("click", () => {
+  navBar.classList.remove("active");
 });

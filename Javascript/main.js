@@ -167,7 +167,7 @@ function addFeatureItemsForFeature(featureList) {
     .map((item) => {
       return `
         <div class="fe-box">
-        <img src="${item.img}" alt="" />
+        <img src="${item.img}" alt="" loading="lazy"/>
         <h6 style="background-color: ${item.h6_bg_color}">${item.h6}</h6>
       </div>`;
     })
@@ -181,7 +181,7 @@ function addFeatureItemsForProduct(featureProductList) {
     .map((item) => {
       return `
       <div class="pro">
-          <img src="${item.img}" alt="" />
+          <img src="${item.img}" alt="" loading="lazy"/>
           <dev class="desc">
             <span>${item.brand}</span>
             <h5>${item.category}</h5>

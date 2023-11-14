@@ -4,34 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce website</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <script defer src="../Javascript/main.js"></script>
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <script defer src="../../Javascript/single_product.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="icon" href="../ICON/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../ICON/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
     <!-- HEADER SECTION -->
     <section id="header">
-      <a href="#"><img src="../img/logo.png" alt="logo" class="logo" /></a>
+      <a href="#"><img src="../../img/logo.png" alt="logo" class="logo" /></a>
       <div>
         <ul id="navbar">
           <li class="close-btn-li"><i class="fa-solid fa-x"></i></li>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="active" href="../shop.html">Shop</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
           <li class="lg-bag">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="../cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
           </li>
         </ul>
       </div>
       <div class="menu-icon-con">
         <span
-          ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a
+          ><a href="../cart.html"><i class="fa-solid fa-bag-shopping"></i></a
         ></span>
         <button>
           <span><i class="fa-solid fa-bars" id="menu-i"></i></span>
@@ -39,21 +40,73 @@
       </div>
     </section>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-      <h4>Trade-in-offer</h4>
-      <h2>Super value deals</h2>
-      <h1>On all products</h1>
-      <p>Save more with coupons & up to 70% off!</p>
-      <button>Shop Now</button>
-    </section>
-
-    <!-- FEATURED SECTION -->
-    <section id="feature">
-      <div class="fe-box">
-        <img src="../img/features/f1.png" alt="" />
-        <!-- Inline bg-color supplied in js -->
-        <h6>Free Shipping</h6>
+    <section id="product-details" class="section-p1">
+      <div class="single-pro-img">
+        <img
+          src="../../img/products/f1.jpg"
+          width="100%"
+          id="mainImage"
+          alt=""
+        />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="../../img/products/f1.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../../img/products/f2.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../../img/products/f3.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../../img/products/f4.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="single-pro-det">
+        <h6>Home / T-shirts</h6>
+        <h4>Men's fashion T-shirts</h4>
+        <h2>$139.99</h2>
+        <select>
+          <option>select size</option>
+          <option>x-small</option>
+          <option>small</option>
+          <option>large</option>
+          <option>xl</option>
+          <option>xxl</option>
+        </select>
+        <input type="number" name="quantity" id="quantity" value="1" min="0" />
+        <button class="normal">Add to Cart</button>
+        <h4>Product Details</h4>
+        <span>
+          Discover timeless elegance with our Shirts, where style meets
+          sophistication. Our shirts blend premium fabrics with exquisite
+          craftsmanship, creating attire that exudes confidence. From classic
+          essentials to fashion-forward designs, our Shirts caters to the modern
+          gentleman, offering unparalleled comfort and a signature touch of
+          refinement. Elevate your wardrobe with our Shirts, a symbol of
+          enduring quality and sartorial excellence.
+        </span>
       </div>
     </section>
 
@@ -63,7 +116,7 @@
       <p>Summer Collection New Modern Design</p>
       <div class="pro-container">
         <div class="pro">
-          <img src="../img/products/f1.jpg" alt="" />
+          <img src="../../img/products/f1.jpg" alt="" />
           <dev class="desc">
             <span>adidas</span>
             <h5>Cartoon Astronout T-shirts</h5>
@@ -78,69 +131,6 @@
           </dev>
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-      </div>
-    </section>
-
-    <!-- BANNER SECTION -->
-    <section id="banner" class="section-m1">
-      <h4>Repair Service</h4>
-      <h2>Up to <span>70% off</span> for All T-shirts & Accessories</h2>
-      <button class="normal">Explore More</button>
-    </section>
-
-    <!-- NEW ARRIVALS SECTION -->
-    <section id="product2" class="section-p1">
-      <h2>New Arrivals</h2>
-      <p>Summer Collection New Modern Design</p>
-      <div class="pro-container new-arrivals">
-        <div class="pro">
-          <img src="../img/products/f1.jpg" alt="" />
-          <dev class="desc">
-            <span>adidas</span>
-            <h5>Cartoon Astronout T-shirts</h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </dev>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SMALL-BANNER -->
-    <section id="sm-banner" class="section-p1">
-      <div class="banner-box">
-        <h4>Crazy Deals</h4>
-        <h2>Buy 1 Get 1 free</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <button class="white">Learn more</button>
-      </div>
-      <div class="banner-box banner-box2">
-        <h4>Spring/Summer</h4>
-        <h2>Buy 1 Get 1 free</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <button class="white">Learn more</button>
-      </div>
-    </section>
-
-    <!-- XS-SMALL BANNERS SECTION -->
-    <section id="banner3" class="section-p1">
-      <div class="banner-box banner-box-b1">
-        <h2>Seasonal Sale</h2>
-        <h3>winter collection 50% off</h3>
-      </div>
-      <div class="banner-box banner-box-b2">
-        <h2>New Footwear Collection</h2>
-        <h3>Spring/Summer 2023</h3>
-      </div>
-      <div class="banner-box banner-box-b3">
-        <h2>Shopping With Fun</h2>
-        <h3>Explore new fashions</h3>
       </div>
     </section>
 
@@ -164,7 +154,7 @@
     <!-- FOOTER SECTION -->
     <section id="footer-section" class="section-p1 section-m1">
       <div class="col">
-        <img class="logo" src="../img/logo.png" alt="" />
+        <img class="logo" src="../../img/logo.png" alt="" />
         <h4>Contact</h4>
         <p class="p-under-logo">
           <b>Address:</b> No 125, Maligawaththa Road, Colombo 7, Sri Lanka.
@@ -217,11 +207,11 @@
         <h4>Install App</h4>
         <p>From app store or google play</p>
         <div class="row">
-          <img src="../img/pay/app.jpg" alt="" />
-          <img src="../img/pay/play.jpg" alt="" />
+          <img src="../../img/pay/app.jpg" alt="" />
+          <img src="../../img/pay/play.jpg" alt="" />
         </div>
         <p>Secured Payment Gateways</p>
-        <img src="../img/pay/pay.png" alt="" />
+        <img src="../../img/pay/pay.png" alt="" />
       </div>
     </section>
 

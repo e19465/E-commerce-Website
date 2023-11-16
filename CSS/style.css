@@ -982,9 +982,55 @@ body {
     color: #c9cbce;
     z-index: -5;
 }
+
+/* ================================================================================= */
+/* || ABOUT PAAGE ===================================================================*/
+/* ================================================================================= */
+#page-header.about-header{
+    background-image: url('../img/about/banner.png');
+}
+
+#about-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-head div p {
+    line-height: 30px;
+}
+
+#about-app{
+    text-align: center;
+    height: 800px;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 80%;
+    margin: 30px auto 0 auto;
+    border-radius: 20px;
+}
+
+#about-app h1 a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+}
+
 /* || MEDIA QUARIES RESPONSIVE DESIGN */
-
-
 @media (max-width:1250px){
     #hero {
         height: 80vh;
@@ -1128,6 +1174,31 @@ body {
     }
     #newsletter .real-form {
         width: 60%;
+    }
+
+    /* ABOUT PAGE */
+    #about-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about-head img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    
+    #about-head div{
+        padding-left: 0px;
+    }
+    
+    #about-app{
+        text-align: center;
+        height: auto;
+    }
+    #about-app .video{
+        width: 100%;
     }
 }
 
@@ -1277,5 +1348,10 @@ body {
     }
     #blog .blog-details p{
         text-align: left;
-    }    
+    }
+    
+    /* ABOUT PAGE */    
+    #about-app .video{
+        width: 100%;
+    }
 }

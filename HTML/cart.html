@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script defer src="../Javascript/cart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" href="../ICON/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <section id="header">
+      <a href="#"><img src="../img/logo.png" alt="logo" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li class="close-btn-li"><i class="fa-solid fa-x"></i></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="lg-bag">
+            <a class="active" href="cart.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-icon-con">
+        <span
+          ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a
+        ></span>
+        <button>
+          <span><i class="fa-solid fa-bars" id="menu-i"></i></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section id="page-header" class="cart-header">
+      <h2>#Online_Shopping</h2>
+      <p>Online shopping with us! Get free delevery.</p>
+    </section>
+
+    <!-- CART SECTION -->
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price($)</td>
+            <td>Quantity</td>
+            <td>Subtotal($)</td>
+          </tr>
+        </thead>
+
+        <tbody class="tbody">
+          <tr>
+            <td>
+              <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+            </td>
+            <td>
+              <img src="../img/products/f1.jpg" alt="" />
+            </td>
+            <td>Cartoon Astronous T-Shirts</td>
+            <td>$119.18</td>
+            <td>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                value="1"
+                min="0"
+              />
+            </td>
+            <td>$119.18</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CART ADD SECTION -->
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <form>
+          <input
+            type="text"
+            name="coup"
+            id="coup"
+            placeholder="Enter your Coupon"
+            required
+          />
+          <button type="submit" class="normal">Apply</button>
+        </form>
+      </div>
+
+      <div id="sub-total">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotals ($)</td>
+            <td class="cart-subtotals">$335</td>
+          </tr>
+          <tr>
+            <td>Shpping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total ($)</strong></td>
+            <td class="total-final"><strong>$335</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed to Check</button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTERS SECTION -->
+    <section id="newsletter">
+      <div class="news-txt">
+        <h4>Sign up for News Letters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form-container">
+        <form action="" class="real-form">
+          <input type="text" placeholder="Enter email..." required />
+          <button type="submit" class="normal">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section id="footer-section" class="section-p1 section-m1">
+      <div class="col">
+        <img class="logo" src="../img/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p class="p-under-logo">
+          <b>Address:</b> No 125, Maligawaththa Road, Colombo 7, Sri Lanka.
+        </p>
+        <p class="p-under-logo">
+          <b>Phone: </b><a href="tel:+94557881756">0557881756</a>
+        </p>
+        <p class="p-under-logo"><b>Hours: </b> 10.00 - 21.00 (Mon-Sat)</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icons">
+            <a href="#" title="go to our facebook page"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" title="go to our twitter page"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" title="go to our pinterest page"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+            <a href="#" title="go to our instagram page"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" title="go to our youtube channel"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From app store or google play</p>
+        <div class="row">
+          <img src="../img/pay/app.jpg" alt="" />
+          <img src="../img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="../img/pay/pay.png" alt="" />
+      </div>
+    </section>
+
+    <!-- BACK TO TOP BTN -->
+    <div class="back-top-icon" title="back to top">
+      <a href="#"><i class="fa-solid fa-up-long" id="back-top"></i></a>
+    </div>
+
+    <!-- FOOTER OF THE PAGE -->
+    <footer id="footOfPage" class="footer">
+      <p class="foot">
+        Copyright &copy; Sasindu PVT LTD <span class="date">2021</span>
+      </p>
+      <p class="foot">All Rights Reserved</p>
+    </footer>
+    <!--  -->
+  </body>
+</html>

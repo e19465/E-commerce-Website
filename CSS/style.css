@@ -829,6 +829,7 @@ body {
 #page-header h2,
 #page-header p{
     color: #fff;
+    text-shadow: 2px 2px 12px #fff;
 }
 
 #pagination{
@@ -1033,6 +1034,7 @@ body {
 /* ================================================================================= */
 /* || CONTACT PAGE =================================================================*/
 /* ================================================================================= */
+
 #page-header.contact-header{
     background-image: url('../img/banner/cont.webp');
     position: relative;
@@ -1157,6 +1159,136 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #000;
+}
+
+
+/* ================================================================================= */
+/* || CART PAGE =====================================================================*/
+/* ================================================================================= */
+#page-header.cart-header{
+    background: url('../img/banner/cart.png') no-repeat 25% 25% / cover ;
+    margin-bottom: 50px;
+}
+
+#page-header.cart-header h2,
+#page-header.cart-header p {
+    color: #000;
+    text-shadow: 2px 2px 12px #000;
+}
+
+#cart {
+    overflow-x: auto;
+    padding: 0;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+    height: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    outline: none;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 15px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#sub-total h3,
+#coupon h3{
+    padding-bottom: 15px;
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#sub-total button,
+#coupon button{
+    background-color: #088178;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+#sub-total{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#sub-total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sub-total table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
 }
 
 /* || MEDIA QUARIES RESPONSIVE DESIGN */
@@ -1401,6 +1533,25 @@ body {
         font-weight: 600;
         color: #000;
     }
+
+    /* || CART PAGE */
+
+    
+
+    #cart-add{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+
+
+    #sub-total{
+        width: 100%;
+    }
 }
 
 /* SMALL (MOBILE) */
@@ -1556,5 +1707,6 @@ body {
         width: 100%;
     }
 
+    
     
 }

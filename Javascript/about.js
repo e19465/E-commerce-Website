@@ -1,4 +1,7 @@
 const featureSection = document.getElementById("feature");
+const navBarCloseIcon = document.querySelector(".close-btn-li");
+const menuIcon = document.getElementById("menu-i");
+const navBar = document.getElementById("navbar");
 
 const featureList = [
   {
@@ -56,3 +59,13 @@ function addFeatureItemsForFeature(featureList) {
     .join("");
   featureSection.innerHTML = menuItems;
 }
+
+// EVENT LISTENER FOR MENU ICON
+menuIcon.addEventListener("click", () => {
+  navBar.classList.add("active");
+});
+
+// EVENT LISTENER FOR MENU ICON CLOSE BTN
+navBarCloseIcon.addEventListener("click", () => {
+  navBar.classList.remove("active");
+});

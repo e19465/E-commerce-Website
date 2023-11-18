@@ -1177,6 +1177,11 @@ body {
     text-shadow: 2px 2px 12px #000;
 }
 
+#page-header.cart-header p{
+    padding: 5px;
+    font-weight: 600;
+    background-color: #fff;
+}
 #cart {
     overflow-x: auto;
     padding: 0;

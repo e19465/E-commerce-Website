@@ -256,9 +256,9 @@ body {
 
 /* || HERO SECTION */
 #hero{
-    background: url("../img/hero4.png") no-repeat 20% 0/ cover;
+    background: url("../img/hero4.png") no-repeat 20% 10%/ cover;
     max-width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     padding: 0px 80px;
     display: flex;
     flex-direction: column;
@@ -1567,6 +1567,7 @@ body {
         width: 300px;
     }
     #hero {
+        /* background: url("../img/hero4.png") no-repeat 2000% 20000%/ cover; */
         height: 50vh;
         padding: 0 20px;
         background-position: 55%;
@@ -1583,7 +1584,7 @@ body {
     #feature .fe-box {
         width: 140px;
         min-height: 200px;
-        margin: 0 0px 15px 0;
+        margin: 0 5px 15px 0;
     }
 
     #product2,

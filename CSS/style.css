@@ -150,6 +150,7 @@ body {
 
 #header .menu-icon-con span a i{
     color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
 }
 
 #header .menu-icon-con button span,
@@ -162,13 +163,14 @@ body {
     justify-content: center;
     border: none;
     background-color: transparent;
+    font-size: 1rem;
 }
 
 #header .menu-icon-con button span i{
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.6);;
     color: rgba(0, 0, 0, 0.6);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 4px;
 }
 
@@ -191,12 +193,12 @@ body {
 
 }
 
-.close-btn-li{
+#navbar .close-btn-li{
     display: none;
     position: absolute;
     top: -40px;
     left: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #b22222;
     transition: all 0.5s;
@@ -224,7 +226,7 @@ body {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--NAV-LI-A-COLOR);
     transition: 0.5s ease;

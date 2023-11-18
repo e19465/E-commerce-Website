@@ -14,4 +14,4 @@ E-commerce website responsive UI design project with HTML, CSS and Java Script
 - Java Script
   
 ## Explore my website here
--  https://sasindu-ecommerce-website.netlify.app/
+-  https://sasindu-e19465-ecommerce-website.netlify.app/

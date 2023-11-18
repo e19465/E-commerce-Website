@@ -10,7 +10,6 @@
 
 /* || VARIABLES */
 :root{
-
     /* BACKGROUND-COLORS */
     --HEADER-BG-COLOR: #e3e6f3;
 
@@ -143,7 +142,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.6);;
     border-radius: 4px;
     margin-right: 15px;
@@ -169,7 +168,7 @@ body {
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.6);;
     color: rgba(0, 0, 0, 0.6);
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 4px;
 }
 

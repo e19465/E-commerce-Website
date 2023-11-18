@@ -4,6 +4,11 @@ const cartSubTotals = document.querySelector(".cart-subtotals");
 const navBarCloseIcon = document.querySelector(".close-btn-li");
 const menuIcon = document.getElementById("menu-i");
 const navBar = document.getElementById("navbar");
+const year = document.querySelector(".date");
+// setting date dynamicaly
+const yr = new Date().getFullYear();
+year.innerHTML = yr;
+
 let value = 0; //cart subtotals
 
 // CART LIST

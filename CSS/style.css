@@ -193,7 +193,7 @@ body {
 
 }
 
-#navbar .close-btn-li{
+.close-btn-li{
     display: none;
     position: absolute;
     top: -40px;

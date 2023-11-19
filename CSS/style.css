@@ -1037,13 +1037,13 @@ body {
 /* ================================================================================= */
 
 #page-header.contact-header{
-    background-image: url('../img/banner/cont.webp');
+    background: url('../img/banner/cont.jpg') no-repeat 25% 75% / cover;
     position: relative;
     z-index: 5;
 }
 #page-header.contact-header::after{
     content: "";
-    background-color: rgba(50,50,50 , 0.7);
+    background-color: rgba(50,50,50 , 0.9);
     position: absolute;
     top: 0;
     left: 0;
